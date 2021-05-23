@@ -24,7 +24,7 @@ description              : "Data analysis & Machine learning" #META 영역에 �
 url                      : "https://lee-jun-yong.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : #홈페이지 기본 티져 이미지
+teaser                   : "/assets/images/update_back.jpg" #홈페이지 기본 티져 이미지
 logo                     : # 타이틀 옆에 작게 들어갈 이미지
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
