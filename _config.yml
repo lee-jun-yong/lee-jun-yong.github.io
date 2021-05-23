@@ -23,14 +23,14 @@ name                     : "이준용" #맨 하단에 이름 찍히는 영역
 description              : "Data analysis & Machine learning" #META 영역에 들어가는 영역
 url                      : "https://lee-jun-yong.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "lee-jun-yong/blog-comments" 
 teaser                   : "/assets/images/update_back.jpg" #홈페이지 기본 티져 이미지
 logo                     : # 타이틀 옆에 작게 들어갈 이미지
 masthead_title           : " 정리가 어려워요" # 홈페이지 최상단에 들어갈 타이틀: 우선순위 1 순위
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -41,8 +41,8 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : "photon-dark" # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname" (default)
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
