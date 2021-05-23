@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/update_back.jpg" #홈페이지 기본 티져 이미지
 logo                     : # 타이틀 옆에 작게 들어갈 이미지
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : " 정리가 어려워요" # 홈페이지 최상단에 들어갈 타이틀
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -94,11 +94,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "이준용"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" 프로필 이미지
+  bio              : "To Data"
+  location         : "Republic of Korea"
+  email            : "dothe7847@nate.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
