@@ -29,7 +29,7 @@ from IPython.display import Image
 
 #### RMSE(제곱근평균제곱오차)
 
-![title](1.jpg)
+![1](https://user-images.githubusercontent.com/84025932/119320073-2540b700-bcb6-11eb-99ba-3a8f74e01b1b.jpg)
 
 ●RMSE의 값을 최소화했을 때의 결과가, 오차가 정규분포를 따른다는 전제하에 구할 수 있는 최대가능도방법과같아지는 등 통계학적으로도 큰 의미를 가지고 있는 평가지표이다.
 
