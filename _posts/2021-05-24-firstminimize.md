@@ -1,3 +1,8 @@
+---
+layout : single
+title : "캐글스터디 1회차 : kaggle 평가지표"
+---
+
 ```python
 !pip install IPython
 from IPython.display import Image
@@ -7,20 +12,6 @@ from IPython.display import Image
 #2. MARKDOWN값 마크다운 창으로 변환후 ![title](1.jpg)
 ```
 
-    Requirement already satisfied: IPython in c:\programdata\anaconda3\lib\site-packages (7.19.0)
-    Requirement already satisfied: colorama; sys_platform == "win32" in c:\programdata\anaconda3\lib\site-packages (from IPython) (0.4.4)
-    Requirement already satisfied: jedi>=0.10 in c:\programdata\anaconda3\lib\site-packages (from IPython) (0.17.1)
-    Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\programdata\anaconda3\lib\site-packages (from IPython) (3.0.8)
-    Requirement already satisfied: setuptools>=18.5 in c:\programdata\anaconda3\lib\site-packages (from IPython) (50.3.1.post20201107)
-    Requirement already satisfied: pygments in c:\programdata\anaconda3\lib\site-packages (from IPython) (2.7.2)
-    Requirement already satisfied: traitlets>=4.2 in c:\programdata\anaconda3\lib\site-packages (from IPython) (5.0.5)
-    Requirement already satisfied: decorator in c:\programdata\anaconda3\lib\site-packages (from IPython) (4.4.2)
-    Requirement already satisfied: backcall in c:\programdata\anaconda3\lib\site-packages (from IPython) (0.2.0)
-    Requirement already satisfied: pickleshare in c:\programdata\anaconda3\lib\site-packages (from IPython) (0.7.5)
-    Requirement already satisfied: parso<0.8.0,>=0.7.0 in c:\programdata\anaconda3\lib\site-packages (from jedi>=0.10->IPython) (0.7.0)
-    Requirement already satisfied: wcwidth in c:\programdata\anaconda3\lib\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->IPython) (0.2.5)
-    Requirement already satisfied: ipython-genutils in c:\programdata\anaconda3\lib\site-packages (from traitlets>=4.2->IPython) (0.2.0)
-    
 
 # 캐글대회 평가지표
 
