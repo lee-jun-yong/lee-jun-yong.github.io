@@ -2,6 +2,9 @@
 ---
 layout: single
 title: "캐글스터디 1회차 : kaggle 평가지표"
+---
+
+---
 comments: true
 ---
 
