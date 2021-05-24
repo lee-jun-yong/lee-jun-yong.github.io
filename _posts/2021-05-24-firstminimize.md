@@ -233,9 +233,10 @@ ID가 1인 행 데이터는 (TP,TN,FP,FN)=(1,0,1,1)이 되고  F1-score는 0.5�
 ---
 comments:True
 ---
-
 <script src="https://utteranc.es/client.js"
-        repo="lee-jun-yong/lee-jun-yong.github.io"
+        repo="lee-jun-yong/blog-comments"
         issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
         async>
 </script>
