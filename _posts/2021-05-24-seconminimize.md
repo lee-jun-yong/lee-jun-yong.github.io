@@ -80,7 +80,8 @@ num_cols = ['age', 'height', 'weight', 'amount',
 
 베이즈평균 
 
-1
+![1](https://user-images.githubusercontent.com/84025932/119360825-fc381a80-bce5-11eb-8d34-5d8250aa8260.jpg)
+119359931-132a3d00-bce5-11eb-817e-a61391897822.JPG)
 
 값 m의 데이터를 C개 측정했다고 보고 평균 계산에 추가한다. 데이터 수가 적을 때는 m에 근접하고 충분히 많을 때는 해당 범주의 평균에 근접한다.
 
