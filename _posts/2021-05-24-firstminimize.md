@@ -1,20 +1,8 @@
 
 ---
-layout: categories
+layout: single
 title: "캐글스터디 1회차 : kaggle 평가지표"
-description: "캐글경진대회 평가지표"
-headline: "캐글스터디 1회차 : kaggle 평가지표"
 comments: true
-published: true
-toc: true
-toc_label: "Contents"
-toc_icon: 
-categories:
-  - kaggle
-tags:
-  - machine_learning
-  - python
-taxonomy: kaggle
 ---
 
 ```python
