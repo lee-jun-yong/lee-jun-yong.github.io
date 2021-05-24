@@ -579,3 +579,14 @@ test_x[num_cols] = transformer.transform(test_x[num_cols])
 ```python
 
 ```
+데이터가 뛰어노는 AI놀이터,캐글 책을 기반으로 공부했습니다.
+
+오류가 있으실경우 dothe7874@nate.com  문의 부탁드립니다! 
+
+<script src="https://utteranc.es/client.js"
+        repo="lee-jun-yong/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
