@@ -4,35 +4,6 @@ layout: single
 title: "캐글 스터디 2회차 :특징생성"
 ---
 
-```python
-# ---------------------------------
-# 데이터 등 준비
-# ----------------------------------
-import numpy as np
-import pandas as pd
-
-# train_x는 학습 데이터, train_y는 목적 변수, test_x는 테스트 데이터
-# pandas의 DataFrame, Series의 자료형 사용(numpy의 array로 값을 저장하기도 함.)
-
-train = pd.read_csv(r'C:\Users\leez\Desktop\kagglebook-main\input\sample-data\train.csv')
-train_x = train.drop(['target'], axis=1)
-train_y = train['target']
-test_x = pd.read_csv(r'C:\Users\leez\Desktop\kagglebook-main\input\sample-data\test.csv')
-
-
-# 설명용으로 학습 데이터와 테스트 데이터의 원래 상태를 복제해 두기
-train_x_saved = train_x.copy()
-test_x_saved = test_x.copy()
-
-
-# 학습 데이터와 테스트 데이터를 반환하는 함수
-def load_data():
-    train_x, test_x = train_x_saved.copy(), test_x_saved.copy()
-    return train_x, test_x
-
-num_cols = ['age', 'height', 'weight', 'amount',
-            'medical_info_a1', 'medical_info_a2', 'medical_info_a3', 'medical_info_b1']
-```
 
 # 캐글 스터디 2회차:특징생성
 
