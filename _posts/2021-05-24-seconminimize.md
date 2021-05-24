@@ -1,6 +1,7 @@
+
 ---
-layout:single
-title:"캐글 스터디 2회차 :특징생성"
+layout: single
+title: "캐글 스터디 2회차 :특징생성"
 ---
 
 ```python
