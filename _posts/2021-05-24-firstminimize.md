@@ -1,6 +1,20 @@
+
 ---
-layout : single
-title : "캐글스터디 1회차 : kaggle 평가지표"
+layout: categories
+title: "캐글스터디 1회차 : kaggle 평가지표"
+description: "캐글경진대회 평가지표"
+headline: "캐글스터디 1회차 : kaggle 평가지표"
+comments: true
+published: true
+toc: true
+toc_label: "Contents"
+toc_icon: 
+categories:
+  - kaggle
+tags:
+  - machine_learning
+  - python
+taxonomy: kaggle
 ---
 
 ```python
@@ -225,3 +239,7 @@ ID가 1인 행 데이터는 (TP,TN,FP,FN)=(1,0,1,1)이 되고  F1-score는 0.5�
 ●K개의 예측값과실제 정답 수가 같아도, 정답인 예측값이순서에 맞지 않게 뒤로 밀리면 점수는 낮아진다.
 
 ●예측값의순서가 중요하고 완전한 예측을 실시 했을때는 1, 완전히 잘못된 예측을 실시했을 때는 0이 된다.
+
+
+"데이터가 뛰어노는 AI놀이터, 캐글" 한빛미디어 발췌
+오류가 있을시 dothe7847@nate.com 연락부탁드립니다.
