@@ -39,29 +39,53 @@ num_cols = ['age', 'height', 'weight', 'amount',
 
 ### 목차
 1. 결측값처리
+
     ①결측값 인채 처리
+    
     ②대푯값으로 결측값 채우기
+    
     ③결측값을 이용해 새로운 특징생성
+    
     ④결측값을 가진 행 변수를 제외
+    
 2. 수치형변수 변환
-    ①표준화(StandardScaler) 
+
+    ①표준화(StandardScaler)
+    
     ②최소최대스케일링(MinMaxScaler)
+    
     ③로그변환, log(x+1) 변환,절댓값 로그 변환(비선형변환)
+    
     ④박스-칵스 변환(비선형변환)
+    
     ⑤여-존슨 변환(비선형변환)
+    
     ⑥클리핑
+    
     ⑦구간분할
+    
     ⑧순위로 변환
+    
     ⑨RankGauss
+    
 3. 범주형변수 변환
+
     ①원-핫 인코딩(One-hot-encoding)
+    
     ②레이블 인코딩(label encoding)
+    
     ③특징 해싱(feature hashing)
+    
     ④프리퀀시인코딩(frequency encoding)
+    
     ⑤타깃 인코딩(target encoding)
+    
     ⑥임베딩
+    
     ⑦순서변수의 취급
+    
 4. 날짜 및 시간변수 변환
+
 ## 1. 결측값처리
 
 ### ①결측값인 채 처리
@@ -81,7 +105,6 @@ num_cols = ['age', 'height', 'weight', 'amount',
 베이즈평균 
 
 ![1](https://user-images.githubusercontent.com/84025932/119360825-fc381a80-bce5-11eb-8d34-5d8250aa8260.jpg)
-119359931-132a3d00-bce5-11eb-817e-a61391897822.JPG)
 
 값 m의 데이터를 C개 측정했다고 보고 평균 계산에 추가한다. 데이터 수가 적을 때는 m에 근접하고 충분히 많을 때는 해당 범주의 평균에 근접한다.
 
