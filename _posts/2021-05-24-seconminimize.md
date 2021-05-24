@@ -1,6 +1,6 @@
 ---
 layout:single
-title:"캐글 스터디 2회차 :특징생성
+title:"캐글 스터디 2회차 :특징생성"
 ---
 
 ```python
@@ -148,7 +148,8 @@ GBDT 등 트리 모델에 기반을 둔 모델에서 대소 관계가 저장되�
 
 ●표준화 수식 
 
-2
+![2](https://user-images.githubusercontent.com/84025932/119359872-086fa800-bce5-11eb-8ac7-b6c15f454ee7.jpg)
+
 
 변수의 평균값과 표준편차를 기준으로 표준화한다.
 
@@ -191,7 +192,8 @@ test_x[num_cols] = scaler.transform(test_x[num_cols])
 
 ●최소-최대스케일링 수식
 
-3
+![3](https://user-images.githubusercontent.com/84025932/119359873-09083e80-bce5-11eb-97f7-39d2c335e48a.jpg)
+
 
 ●사이킷런의 MinMaxScaler클래스로 실시 가능하다.
 
@@ -258,7 +260,7 @@ x3 = np.sign(x) * np.log(np.abs(x))
 
 ●박스-칵스 변환 수식
 
-4
+![4](https://user-images.githubusercontent.com/84025932/119359876-09083e80-bce5-11eb-903e-1d8976a8730a.jpg)
 
 
 ```python
@@ -283,7 +285,7 @@ test_x[pos_cols] = pt.transform(test_x[pos_cols])
 
 ● λ값을 따로 명시할 필요가 없다 (λ값은 정규분포에 근접하도록 라이브러리 측에서 최적에 값을 추정해준다)
 
-5
+![5](https://user-images.githubusercontent.com/84025932/119359877-09a0d500-bce5-11eb-94c2-b0f95cdda6ad.jpg)
 
 ↑ 박스-칵스 변환전 후 분포도
 
@@ -293,8 +295,7 @@ test_x[pos_cols] = pt.transform(test_x[pos_cols])
 ●음의 값을 갖는 변수에도 적용할수 있는 변환
 ●여-존슨 변환 공식
 
-6
-
+![6](https://user-images.githubusercontent.com/84025932/119359879-0a396b80-bce5-11eb-8252-76f0d94e81ed.jpg)
 
 ```python
 # Yeo-Johnson변환
@@ -337,7 +338,7 @@ train_x[num_cols] = train_x[num_cols].clip(p01, p99, axis=1)
 test_x[num_cols] = test_x[num_cols].clip(p01, p99, axis=1)
 ```
 
-7
+![7](https://user-images.githubusercontent.com/84025932/119359882-0a396b80-bce5-11eb-8905-9dec8051f16e.jpg)
 
 ↑클리핑 전후 산포도
 
@@ -439,7 +440,8 @@ test_x[num_cols] = transformer.transform(test_x[num_cols])
 
 ```
 
-8
+![8](https://user-images.githubusercontent.com/84025932/119359886-0ad20200-bce5-11eb-9d6e-9092e76e276a.jpg)
+
 
 ↑ RankGauss 전후 분포도
 
@@ -462,15 +464,18 @@ test_x[num_cols] = transformer.transform(test_x[num_cols])
 ###     ①원-핫 인코딩(One-hot-encoding)
 
 
-슬4
+![슬라이드4](https://user-images.githubusercontent.com/84025932/119359887-0b6a9880-bce5-11eb-977d-1b36e09ec4d7.JPG)
+
 
 #### pandas의 get_dummies를 이용한 원핫인코딩
 
-슬5 슬6
+![슬라이드5](https://user-images.githubusercontent.com/84025932/119359890-0b6a9880-bce5-11eb-8737-5af5a3438e9f.JPG)
+![슬라이드6](https://user-images.githubusercontent.com/84025932/119359894-0c032f00-bce5-11eb-9be9-a9ef6e9a61be.JPG)
 
 #### scikit-learn의onehotencorder를 이용한 원핫 인코딩
 
-슬7 슬8
+![슬라이드7](https://user-images.githubusercontent.com/84025932/119359896-0c9bc580-bce5-11eb-98e4-c13b077225b1.JPG)
+![슬라이드8](https://user-images.githubusercontent.com/84025932/119359899-0d345c00-bce5-11eb-90af-c36bdba6a8e7.JPG)
 
 #### 원-핫 인코딩(One-hot-encoding)의 단점
 
@@ -492,42 +497,43 @@ test_x[num_cols] = transformer.transform(test_x[num_cols])
 ###     ②레이블 인코딩(label encoding)
 
 
-슬10
+![슬라이드10](https://user-images.githubusercontent.com/84025932/119359904-0dccf280-bce5-11eb-9e51-968e000041e6.JPG)
 
 #### scikit-learn의 labelencorder를 이용한 레이블 인코딩 
 
 
-슬11 ,12
+![슬라이드11](https://user-images.githubusercontent.com/84025932/119359906-0e658900-bce5-11eb-9dbc-d4973294f1df.JPG)
+![슬라이드12](https://user-images.githubusercontent.com/84025932/119359909-0e658900-bce5-11eb-8da7-8e367ed0161c.JPG)
 
 ###  ③특징 해싱(feature hashing)
 
-
-13
+![슬라이드13](https://user-images.githubusercontent.com/84025932/119359911-0efe1f80-bce5-11eb-9529-4e7f6353d7e1.JPG)
 
 #### scikit-learn의 FeatureHasher를 이용한 특징해싱
 
 
-14,15
+![슬라이드14](https://user-images.githubusercontent.com/84025932/119359914-0f96b600-bce5-11eb-83e3-6d051b614a4e.JPG)
+![슬라이드15](https://user-images.githubusercontent.com/84025932/119359916-102f4c80-bce5-11eb-879c-b1d4d50445ff.JPG)
 
 ###   ④프리퀀시인코딩(frequency encoding)
 
 
-16,17
+![슬라이드16](https://user-images.githubusercontent.com/84025932/119359917-102f4c80-bce5-11eb-9e29-2198910b2574.JPG)
+![슬라이드17](https://user-images.githubusercontent.com/84025932/119359924-11f91000-bce5-11eb-8b2a-4e900d37950b.JPG)
 
 ###     ⑤타깃 인코딩(target encoding)
 
-
-18
+![슬라이드18](https://user-images.githubusercontent.com/84025932/119359927-11f91000-bce5-11eb-9e04-7c563b919b38.JPG)
 
 #### 타깃 인코딩(1)타깃 인코딩용 폴드분할
 
-
-19,20
+![슬라이드19](https://user-images.githubusercontent.com/84025932/119359929-1291a680-bce5-11eb-947e-a03af209a89e.JPG)
+![슬라이드20](https://user-images.githubusercontent.com/84025932/119359931-132a3d00-bce5-11eb-817e-a61391897822.JPG)
 
 #### 타깃 인코딩(2)교차 검증
 
-
-21,22
+![슬라이드21](https://user-images.githubusercontent.com/84025932/119359938-145b6a00-bce5-11eb-8b0b-76892e8b48b5.JPG)
+![슬라이드22](https://user-images.githubusercontent.com/84025932/119359940-14f40080-bce5-11eb-94a3-46f32126f930.JPG)
 
 #### 타겟 인코딩 모델별 목적변수 평균구하는법
 
@@ -544,22 +550,20 @@ test_x[num_cols] = transformer.transform(test_x[num_cols])
 
 #### 타깃 인코딩 데이터 정보 노출(1)
 
-
-24
+![슬라이드24](https://user-images.githubusercontent.com/84025932/119359947-16252d80-bce5-11eb-9701-e0b9f5d3cf4f.JPG)
 
 #### 타깃 인코딩 데이터 정보 노출(2)
 
-
-25 26
+![슬라이드25](https://user-images.githubusercontent.com/84025932/119359949-16bdc400-bce5-11eb-9c3d-7e05326214e3.JPG)
+![슬라이드26](https://user-images.githubusercontent.com/84025932/119359958-17eef100-bce5-11eb-87d5-fc39ab041add.JPG)
 
 ### ⑥임베딩
     
-
-27
+![슬라이드27](https://user-images.githubusercontent.com/84025932/119359961-18878780-bce5-11eb-89b7-46591537c4f2.JPG)
 
 ### ⑦순서변수의 취급
 
-28
+![슬라이드28](https://user-images.githubusercontent.com/84025932/119359965-19201e00-bce5-11eb-902a-a9eacbfc222f.JPG)
 
 ## 4. 날씨 및 시간변수 변환 
 
