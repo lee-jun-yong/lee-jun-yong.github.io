@@ -1,45 +1,8 @@
-```python
-import numpy as np
-import pandas as pd
+---
+layout: single
+title: "캐글스터디 3회차 : 차원축소기법과 자연어처리 기법 "
+---
 
-# train_x는 학습 데이터, train_y는 목적 변수, test_x는 테스트 데이터
-# pandas의 DataFrame, Series의 자료형 사용(numpy의 array로 값을 저장하기도 함.)
-
-train = pd.read_csv(r'C:\Users\leez\Desktop\kagglebook-main\input\sample-data\train_preprocessed_onehot.csv')
-train_x = train.drop(['target'], axis=1)
-train_y = train['target']
-test_x = pd.read_csv(r'C:\Users\leez\Desktop\kagglebook-main\input\sample-data\test_preprocessed_onehot.csv')
-
-# 설명용으로 학습 데이터와 테스트 데이터의 원래 상태를 복제해 두기
-train_x_saved = train_x.copy()
-test_x_saved = test_x.copy()
-
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
-
-
-# 표준화한 학습 데이터와 테스트 데이터를 반환하는 함수
-def load_standarized_data():
-    train_x, test_x = train_x_saved.copy(), test_x_saved.copy()
-
-    scaler = StandardScaler()
-    scaler.fit(train_x)
-    train_x = scaler.transform(train_x)
-    test_x = scaler.transform(test_x)
-    return pd.DataFrame(train_x), pd.DataFrame(test_x)
-
-
-# MinMax 스케일링을 수행한 학습 데이터와 테스트 데이터를 반환하는 함수
-def load_minmax_scaled_data():
-    train_x, test_x = train_x_saved.copy(), test_x_saved.copy()
-
-    # Min-Max Scaling 진행
-    scaler = MinMaxScaler()
-    scaler.fit(pd.concat([train_x, test_x], axis=0))
-    train_x = scaler.transform(train_x)
-    test_x = scaler.transform(test_x)
-
-    return pd.DataFrame(train_x), pd.DataFrame(test_x)
-```
 
 ## 차원축소기법
 
@@ -193,58 +156,6 @@ data = pd.concat([train_x,test_x])
 tsne_data = tsne.fit_transform([data])
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    ValueError                                Traceback (most recent call last)
-
-    <ipython-input-15-b1902ef4c1a4> in <module>
-          5 
-          6 data = pd.concat([train_x,test_x])
-    ----> 7 tsne_data = tsne.fit_transform([data])
-    
-
-    C:\ProgramData\Anaconda3\lib\site-packages\sklearn\manifold\_t_sne.py in fit_transform(self, X, y)
-        889             Embedding of the training data in low-dimensional space.
-        890         """
-    --> 891         embedding = self._fit(X)
-        892         self.embedding_ = embedding
-        893         return self.embedding_
-    
-
-    C:\ProgramData\Anaconda3\lib\site-packages\sklearn\manifold\_t_sne.py in _fit(self, X, skip_num_points)
-        667             raise ValueError("'angle' must be between 0.0 - 1.0")
-        668         if self.method == 'barnes_hut':
-    --> 669             X = self._validate_data(X, accept_sparse=['csr'],
-        670                                     ensure_min_samples=2,
-        671                                     dtype=[np.float32, np.float64])
-    
-
-    C:\ProgramData\Anaconda3\lib\site-packages\sklearn\base.py in _validate_data(self, X, y, reset, validate_separately, **check_params)
-        418                     f"requires y to be passed, but the target y is None."
-        419                 )
-    --> 420             X = check_array(X, **check_params)
-        421             out = X
-        422         else:
-    
-
-    C:\ProgramData\Anaconda3\lib\site-packages\sklearn\utils\validation.py in inner_f(*args, **kwargs)
-         70                           FutureWarning)
-         71         kwargs.update({k: arg for k, arg in zip(sig.parameters, args)})
-    ---> 72         return f(**kwargs)
-         73     return inner_f
-         74 
-    
-
-    C:\ProgramData\Anaconda3\lib\site-packages\sklearn\utils\validation.py in check_array(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator)
-        638             array = array.astype(np.float64)
-        639         if not allow_nd and array.ndim >= 3:
-    --> 640             raise ValueError("Found array with dim %d. %s expected <= 2."
-        641                              % (array.ndim, estimator_name))
-        642 
-    
-
-    ValueError: Found array with dim 3. Estimator expected <= 2.
 
 
 ### 6.UMAP
