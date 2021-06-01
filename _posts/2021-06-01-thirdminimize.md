@@ -240,9 +240,9 @@ test_distances = kmeans.transform(test_x)
 
 - BoW에서 작성한 단어-문서 카운트 행렬을 변환하는 기법이다.
 
- > 단어 빈도(TF): 어떤 텍스트에서의 특정 단어의 출현 비율
+ >> 단어 빈도(TF): 어떤 텍스트에서의 특정 단어의 출현 비율
 
- > 역문서 빈도(IDF): tf와 반대되는 개념으로 특정 단어가 나타나는 문서의 수.
+ >> 역문서 빈도(IDF): tf와 반대되는 개념으로 특정 단어가 나타나는 문서의 수.
 
 - CounterVectorizer 클래스 등으로 작성된 행렬에 사이킷런 feature_extraction.text 모듈의 Tfidf Transformer를 적용함으로써 이 기법을 처리할 수 있다.
 
@@ -255,6 +255,7 @@ test_distances = kmeans.transform(test_x)
 -------------------------------------------
 
 "데이터가 뛰어노는 AI놀이터, 캐글" 한빛미디어 인용
+
 오류가 있을시 dothe7847@nate.com 연락부탁드립니다.
 
 
