@@ -253,3 +253,17 @@ test_distances = kmeans.transform(test_x)
 ```python
 
 ```
+
+"데이터가 뛰어노는 AI놀이터, 캐글" 한빛미디어 인용
+오류가 있을시 dothe7847@nate.com 연락부탁드립니다.
+
+---
+comments:True
+---
+<script src="https://utteranc.es/client.js"
+        repo="lee-jun-yong/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
