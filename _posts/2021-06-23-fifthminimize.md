@@ -19,7 +19,8 @@ title: "캐글스터디 4회차 : 경진대회 주요 모델 평가 "
 
 ### 홀드아웃 검증
 
-15
+![15](https://user-images.githubusercontent.com/84025932/123093419-a2527e00-d466-11eb-880d-4e0fc1cdb413.jpg)
+
 
 +	학습용 데이터로 모델을 학습시키고, 따로 남겨둔 검증용 데이터로 모델을 평가하는 방법
 +	사이킷런 model_selection 모듈의 train_test_split 함수와 kfold클래스를 이용해 홀드아웃 검증으로 데이터 분할 가능
@@ -67,7 +68,9 @@ tr_y, va_y = train_y.iloc[tr_idx], train_y.iloc[va_idx]
 
 ### 교차검증
 
-16
+![16](https://user-images.githubusercontent.com/84025932/123093421-a383ab00-d466-11eb-9de2-b90391b35064.jpg)
+
+
 사진출처 : <https://velog.io/@lsmmay322/Model-Selection>
 
 + 학습 데이터를 분할하고 홀드아웃 검증 절차를 여러 번 반복함으로써 매회 검증 학습에 이용할 데이터의 양을 유지하면서도 검증 평가에 필요한 데이터를 학습 데이터 전체로 가능
@@ -207,6 +210,20 @@ for tr_idx, va_idx in loo.split(train_x):
 ```
 
 
+-------------------------------------------
+
+"데이터가 뛰어노는 AI놀이터, 캐글" 한빛미디어 인용
+
+오류가 있을시 dothe7847@nate.com 연락부탁드립니다.
+
+
+<script src="https://utteranc.es/client.js"
+        repo="lee-jun-yong/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 
 
