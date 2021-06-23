@@ -134,7 +134,7 @@ GBDT 구성도
 >> 활성화 함수로는 렐루(ReLu) 이용
 >> 은닉계층의 유닛수는 하이퍼파라미터로 설정
 
-![5](https://user-images.githubusercontent.com/84025932/123085090-d7f26980-d45c-11eb-8622-035e354f5973.jpg)
+![11](https://user-images.githubusercontent.com/84025932/123087086-1d179b00-d45f-11eb-860d-30cef58f35a1.jpg)
 
 ##### 출력계층
 >> 1. 출력계층에서는 앞 선 은닉계층의 값을 가중치로 부가한 합을 계산
@@ -145,8 +145,7 @@ GBDT 구성도
 
 >> 3. 출력계층 개수는 회귀나 이진분류라면 1개,다중클래스 분류의 경우 클래스 수
 
-
-![7](https://user-images.githubusercontent.com/84025932/123085099-d9bc2d00-d45c-11eb-91b2-808c7ad3c85b.jpg)
+![12](https://user-images.githubusercontent.com/84025932/123087098-1e48c800-d45f-11eb-9fbf-5b621a7db543.jpg)
 
 
 
