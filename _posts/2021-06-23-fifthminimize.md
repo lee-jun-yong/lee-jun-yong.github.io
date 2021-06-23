@@ -32,6 +32,8 @@ title: "캐글스터디 4회차 : 경진대회 주요 모델 평가 "
 #### 홀드아웃 코드 구현
 
 + (1)train_test_split 방식
+
+
 ```python
 from sklearn.metrics import log_loss
 from sklearn.model_selection import train_test_split
@@ -52,6 +54,8 @@ print(score)
 ```
 
 + (2)kfold 방식
+
+
 ```python
 # KFold 클래스를 이용하여 홀드아웃 방법으로 검증 데이터를 분할
 
@@ -65,6 +69,7 @@ print(tr_idx, va_idx)
 tr_x, va_x = train_x.iloc[tr_idx], train_x.iloc[va_idx]
 tr_y, va_y = train_y.iloc[tr_idx], train_y.iloc[va_idx]
 ```
+
 
 ### 교차검증
 
