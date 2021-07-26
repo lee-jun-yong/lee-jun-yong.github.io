@@ -4,7 +4,7 @@ main:
   # - title: "Post"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
     - title: "Post"
-      url: https://lee-jun-yong.github.io/_posts/
+      url: /_posts/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
