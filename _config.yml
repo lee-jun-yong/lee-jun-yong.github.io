@@ -8,7 +8,7 @@
 # Theme Settings
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+# https://mmistakes.github.io/minimal-mistakes/docs/-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "ATFER 2" #META 태그에 들어가능 영역 (타이틀 : 우선순위 masthead_title 이 우선)
+title                    : "Note" #META 태그에 들어가능 영역 (타이틀 : 우선순위 masthead_title 이 우선)
 title_separator          : #타이틀 사이 구분자
 subtitle                 : "Version 1.0" #타이틀 아래에 나올 작은 글씨
 name                     : "이준용" #맨 하단에 이름 찍히는 영역
@@ -280,3 +280,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+ people:
