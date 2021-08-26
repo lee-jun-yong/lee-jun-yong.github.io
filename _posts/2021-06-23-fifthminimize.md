@@ -1,12 +1,25 @@
 ---
 layout: single
 title: "캐글스터디 4회차 : 경진대회 주요 모델 평가 "
+tags:
+  - kaggle
+  - machine learning
+toc: true
+toc_sticky: true
+toc_label: "CONTENT"
+toc_icon: "blog"
+
 ---
 
+
+
 📌 **작성자 개발 환경** <br>
+
 **OS** : Windows 10<br>
 **Tool** : Jupyter notebook<br>
+
 {: .notice--primary}
+
 
 # Chapter 5 모델평가
 
