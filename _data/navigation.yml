@@ -4,13 +4,9 @@ main:
   # - title: "Post"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
     - title: "Introduce"
-      url: /about/
+      url: /about
     - title: "Post"
       url: /_posts
-    - title: "Category"
-      url: /categories/
-    - title: "Tags"
-      url : /tags
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
