@@ -5,8 +5,8 @@ tags:
   - kaggle
   - machine learning
 toc: true
-toc_sticky: true
-toc_label: "CONTENT"
+toc_sticky: true  //사이드바 고정역활
+toc_label: "CONTENT" //toc의 제목
 toc_icon: "blog"
 
 ---
