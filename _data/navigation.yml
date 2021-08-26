@@ -3,8 +3,8 @@ main:
   
   # - title: "Post"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-    - title: "Introduce"
-      url: /about
+  #  - title: "Introduce"
+  #    url: /about
     - title: "Post"
       url: /_posts
   # - title: "Sample Collections"
